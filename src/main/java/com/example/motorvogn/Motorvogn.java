@@ -1,7 +1,7 @@
 package com.example.motorvogn;
 
 public class Motorvogn {
-    private int personnr;
+    private long personnr;
     private String navn;
     private String adresse;
     private String kjennetegn;
@@ -20,7 +20,7 @@ public class Motorvogn {
     //Get metodene
     public Motorvogn () { }
 
-    public int getPersonnr() {
+    public long getPersonnr() {
         return personnr;
     }
 
@@ -45,7 +45,7 @@ public class Motorvogn {
     }
 
     //Set metodene
-    public void setPersonnr(int personnr) {
+    public void setPersonnr(long personnr) {
         this.personnr = personnr;
     }
 
