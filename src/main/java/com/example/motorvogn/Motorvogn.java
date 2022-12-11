@@ -1,14 +1,14 @@
 package com.example.motorvogn;
 
 public class Motorvogn {
-    private String personnr;
+    private int personnr;
     private String navn;
     private String adresse;
     private String kjennetegn;
     private String merke;
     private String type;
 
-    public Motorvogn(String personnr, String navn, String adresse, String kjennetegn, String merke, String type){
+    public Motorvogn(int personnr, String navn, String adresse, String kjennetegn, String merke, String type){
         setPersonnr(personnr);
         setNavn(navn);
         setAdresse(adresse);
@@ -20,7 +20,7 @@ public class Motorvogn {
     //Get metodene
     public Motorvogn () { }
 
-    public String getPersonnr() {
+    public int getPersonnr() {
         return personnr;
     }
 
@@ -45,7 +45,7 @@ public class Motorvogn {
     }
 
     //Set metodene
-    public void setPersonnr(String personnr) {
+    public void setPersonnr(int personnr) {
         this.personnr = personnr;
     }
 
