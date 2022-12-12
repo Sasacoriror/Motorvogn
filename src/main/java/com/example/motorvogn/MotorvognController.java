@@ -29,6 +29,16 @@ public class MotorvognController {
         return rep.hentAlleMotorvogn();
     }
 
+    @GetMapping("/hentEnMotorvogn")
+    public Motorvogn hentEnMotorvogn(int id){
+        return rep.hentEnMotorvogn(id);
+    }
+
+    @PostMapping("/endre")
+    public void endre(Motorvogn motorvogn){
+        rep.endreEnMotorvogn(motorvogn);
+    }
+
     @GetMapping("/slettEnMotorvogn")
     public void slettEnMotorvogn(String personnr){
         rep.slettEnMotorvogn(personnr);
